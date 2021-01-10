@@ -25,7 +25,12 @@ My Driver Class Capabilities :  - Parallel execution
            (*Creating connection between Hub and Node)
                  - For node : java -Dwebdriver.chrome.driver="chromedriver" -jar selenium-server-standalone-3.141.59.jar -role node
                                                                                         -hub http://localhost:4444/grid/register/
+CI/CD - Jenkins :
 
+        -In the , *Source Code Management Section I feed the our script  by using Git Repository
+                  *Build Trigger section I use cron expression for scheduling the execute
+                  *Build section I choose Invoke Top-level Maven target 'cause my test script developed by using Maven and written Java
+                  *Post-build Actions I set the report mech. and e-mail notifications/alert
 
 
 
