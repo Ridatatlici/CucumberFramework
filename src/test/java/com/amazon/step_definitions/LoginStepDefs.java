@@ -69,11 +69,11 @@ public class LoginStepDefs {
         loginPage.loginButton.click();
     }
 
+
     @Then("user should be on the main page")
     public void user_should_be_on_the_main_page() {
         BrowserUtils.waitFor(4);
-        //-----------------------------------------******************
-        String actualResult= "Amazon.com.tr: Elektronik, bilgisayar, akıllı telefon, kitap, oyuncak, yapı market, ev, mutfak, oyun konsolları ürünleri ve daha fazlası için internet alışveriş sitesi";
+        String actualResult= Driver.get().getTitle();
         String expectedResult= "Amazon.com.tr: Elektronik, bilgisayar, akıllı telefon, kitap, oyuncak, yapı market, ev, mutfak, oyun konsolları ürünleri ve daha fazlası için internet alışveriş sitesi";
         Assert.assertEquals(expectedResult,actualResult);
     }

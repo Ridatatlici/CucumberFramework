@@ -52,7 +52,7 @@ public class SearchStepDefs {
         List<WebElement> resultsObjectElements = resultPage.resultsObject;
         List<String> elementsText = BrowserUtils.getElementsText(resultsObjectElements);
         for (String control : elementsText) {
-            if (control.contains(globalitem)){ counter++;  }
+            if (control.toLowerCase().contains(globalitem.toLowerCase())){ counter++;  }
         }
         Assert.assertEquals(resultsObjectElements.size(),counter);
     }
