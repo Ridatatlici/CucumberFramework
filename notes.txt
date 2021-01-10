@@ -1,3 +1,6 @@
+*If any restriction about the driver (about being public) , we can use local driver object but we have to change
+* driver class
+
  WebDriver driver ;
 
     @Test

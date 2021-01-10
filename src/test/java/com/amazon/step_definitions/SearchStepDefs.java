@@ -8,6 +8,8 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.util.List;
 import java.util.Random;
@@ -34,13 +36,19 @@ public class SearchStepDefs {
     @Then("user should able to see result page")
     public void user_should_able_to_see_result_page() {
         String expectedResult="Amazon.com.tr : "+ globalitem;
-        String actualResult= new ResultPage().getPageTitle();
+        WebDriverWait wait = new WebDriverWait(Driver.get(),10);
+        wait.until(ExpectedConditions.titleIs("Amazon.com.tr : "+globalitem));
+        String actualResult= Driver.get().getTitle();
         Assert.assertEquals(expectedResult,actualResult);
     }
 
+    /**
+     * I only assert first page , u can easily handled with created loop check all pages
+     */
     @And("user should able to see related product")
     public void user_should_able_to_see_related_product() {
         ResultPage resultPage = new ResultPage();
+        BrowserUtils.waitForPageToLoad(5);
         List<WebElement> resultsObjectElements = resultPage.resultsObject;
         List<String> elementsText = BrowserUtils.getElementsText(resultsObjectElements);
         for (String control : elementsText) {

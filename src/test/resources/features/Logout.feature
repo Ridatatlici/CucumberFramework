@@ -1,4 +1,4 @@
-@smokee
+@smoke
 Feature: Logout Functionality
   Background:
     Given User able to go to website

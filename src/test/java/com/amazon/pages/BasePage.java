@@ -44,33 +44,8 @@ public abstract class BasePage {
     @CacheLookup
     protected WebElement loaderMask;
 
-    @FindBy(css = "#nav-item-signout")
+    @FindBy(xpath = "//span[contains(text(),'Çıkış Yap')]")
     public WebElement logoutButton;
 
-    /**
-     * @return page name, for example: Amazon Giriş Yap or Amazon: Araba
-     */
-    public String getPageTitle() {
-        //ant time we are verifying page name, or page subtitle, loader mask appears
-        waitUntilLoaderScreenDisappear();
-
-        return Driver.get().getTitle();
-    }
-
-
-    /**
-     * Waits until loader screen present. If loader screen will not pop up at all,
-     * NoSuchElementException will be handled  bu try/catch block
-     * Thus, we can continue in any case.
-     */
-    public void waitUntilLoaderScreenDisappear() {
-        try {
-            WebDriverWait wait = new WebDriverWait(Driver.get(), 5);
-            wait.until(ExpectedConditions.invisibilityOf(loaderMask));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-
-    }
 
 }
