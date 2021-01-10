@@ -1,0 +1,12 @@
+ WebDriver driver ;
+
+    @Test
+    public void name() {
+
+        System.setProperty("webdriver.chrome.driver","/Users/mac/IdeaProjects/CucumberFramework/chromedriver");
+
+        WebDriver driver=new ChromeDriver();
+
+        driver.get("http://google.com")   ;
+
+    }
