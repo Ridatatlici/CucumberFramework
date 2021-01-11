@@ -1,24 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: com.amazon.runners.FailedTestRunner
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.922 s <<< FAILURE! - in com.amazon.runners.FailedTestRunner
-User should able to login with valid credential - Happy Path(Login Functionality)  Time elapsed: 0.181 s  <<< ERROR!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: window was already closed
-  (Session info: chrome=87.0.4280.141)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MAC-MacBook-Air', ip: 'fe80:0:0:0:1c:3c6d:9c94:4e3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/01/_d4rgngs0zg...}, goog:chromeOptions: {debuggerAddress: localhost:54833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d9fbbbb0c400c696d336a3104fb...}
-Session ID: d9fbbbb0c400c696d336a3104fbf58d1
-
-User should able to login with valid credential - Happy Path(Login Functionality)  Time elapsed: 0.183 s  <<< ERROR!
-org.openqa.selenium.NoSuchWindowException: 
-no such window: window was already closed
-  (Session info: chrome=87.0.4280.141)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MAC-MacBook-Air', ip: 'fe80:0:0:0:1c:3c6d:9c94:4e3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/01/_d4rgngs0zg...}, goog:chromeOptions: {debuggerAddress: localhost:54833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d9fbbbb0c400c696d336a3104fb...}
-Session ID: d9fbbbb0c400c696d336a3104fbf58d1
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 22.535 s <<< FAILURE! - in com.amazon.runners.FailedTestRunner
+User should able to login with valid credential - Happy Path(Login Functionality)  Time elapsed: 22.47 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<Amazon[.com.tr: Elektronik, bilgisayar, akıllı telefon, kitap, oyuncak, yapı market, ev, mutfak, oyun konsolları ürünleri ve daha fazlası için internet alışveriş sitesi]> but was:<Amazon[]>
 

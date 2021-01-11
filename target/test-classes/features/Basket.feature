@@ -1,4 +1,4 @@
-@wip
+@smoke
 Feature: Basket Functionality
 
   Background:

@@ -1,5 +1,5 @@
 Feature: Login Functionality
-   @smoke
+   @smokee
   Scenario Outline: User should able to login with valid credential - Happy Path
     Given User able to go to website
     And user should able to hover over account area

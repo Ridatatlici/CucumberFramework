@@ -76,7 +76,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>Cucumber HTML Reports</td>
         <td>1</td>
-      <td>10 Jan 2021, 16:24</td>
+      <td>11 Jan 2021, 13:51</td>
     </tr>
   </tbody>
 </table>
@@ -129,9 +129,9 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">Login Functionality</td>
-          <td >0</td>
+          <td      class="passed"    >5</td>
           <td      class="failed"    >1</td>
-          <td     class="skipped"   >5</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">6</td>
@@ -140,7 +140,7 @@ $(document).ready(function() {
           <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="1807831000">1.807</td>
+          <td class="duration" data-value="19579540000">19.579</td>
           <td class="failed">Failed</td>
         </tr>
         </tbody>
@@ -189,11 +189,11 @@ $(document).ready(function() {
 
 <div class="tags indention">
     <b>Tags:</b>
-       <a href="report-tag_4089311534.html">@smoke</a>
+       <a href="report-tag_2214606101.html">@smokee</a>
 </div>
 
 
-  <span class="lead-duration duration">1.807</span>
+  <span class="lead-duration duration">19.579</span>
 
 
   <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
@@ -231,7 +231,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
               <span class="location name">com.amazon.step_definitions.Hooks.setUp()</span>
 
-  <span class="lead-duration duration">11.243</span>
+  <span class="lead-duration duration">12.635</span>
 
           </div>
 
@@ -264,11 +264,146 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Given failed">
+<div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
   <span class="name">User able to go to website</span>
 
-  <span class="lead-duration duration">1.799</span>
+  <span class="lead-duration duration">9.549</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should able to hover over account area</span>
+
+  <span class="lead-duration duration">0.012</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">user should able to click login button</span>
+
+  <span class="lead-duration duration">2.857</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then passed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should be able to see login page</span>
+
+  <span class="lead-duration duration">0.015</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-When passed">
+  <span class="keyword indention">When</span>
+  <span class="name">the user enters <span class="argument">&quot;ridatat@gmail.com&quot;</span> and <span class="argument">&quot;.07sDet+&quot;</span></span>
+
+  <span class="lead-duration duration">3.128</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then failed">
+  <span class="keyword indention">Then</span>
+  <span class="name">user should be on the main page</span>
+
+  <span class="lead-duration duration">4.016</span>
 
 </div>
 
@@ -280,170 +415,18 @@ $(document).ready(function() {
   <div class="inner-level">
     <div class="message indention">
       <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>org.openqa.selenium.WebDriverException:</a>
+          <a>org.junit.ComparisonFailure:</a>
       </div>
       <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: Unable to receive message from renderer
-  (Session info: chrome=87.0.4280.141)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MAC-MacBook-Air', ip: 'fe80:0:0:0:1c:3c6d:9c94:4e3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/01/_d4rgngs0zg...}, goog:chromeOptions: {debuggerAddress: localhost:54833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d9fbbbb0c400c696d336a3104fb...}
-Session ID: d9fbbbb0c400c696d336a3104fbf58d1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.amazon.step_definitions.LoginStepDefs.user_able_to_go_to_website(LoginStepDefs.java:23)
-	at &#10045;.User able to go to website(file:///Users/mac/IdeaProjects/CucumberFramework/src/test/resources/features/Login.feature:4)
+        <pre>org.junit.ComparisonFailure: expected:&lt;Amazon[.com.tr: Elektronik, bilgisayar, ak&#305;ll&#305; telefon, kitap, oyuncak, yap&#305; market, ev, mutfak, oyun konsollar&#305; &uuml;r&uuml;nleri ve daha fazlas&#305; i&ccedil;in internet al&#305;&#351;veri&#351; sitesi]&gt; but was:&lt;Amazon[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at com.amazon.step_definitions.LoginStepDefs.user_should_be_on_the_main_page(LoginStepDefs.java:78)
+	at &#10045;.user should be on the main page(file:///Users/mac/IdeaProjects/CucumberFramework/src/test/resources/features/Login.feature:9)
 </pre>
       </div>
     </div>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user should able to hover over account area</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And skipped">
-  <span class="keyword indention">And</span>
-  <span class="name">user should able to click login button</span>
-
-  <span class="lead-duration duration">0.003</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user should be able to see login page</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-When skipped">
-  <span class="keyword indention">When</span>
-  <span class="name">the user enters <span class="argument">&quot;ridatat@gmail.com&quot;</span> and <span class="argument">&quot;.07sDet+&quot;</span></span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-Then skipped">
-  <span class="keyword indention">Then</span>
-  <span class="name">user should be on the main page</span>
-
-  <span class="lead-duration duration">0.001</span>
-
-</div>
-
-
-
-
-
 
 
 
@@ -463,9 +446,9 @@ Session ID: d9fbbbb0c400c696d336a3104fbf58d1
 
 
   <div class="inner-level hooks-element-after">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#after-5">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
 
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Hooks</span>
   <span class="name"></span>
 
@@ -475,52 +458,36 @@ Session ID: d9fbbbb0c400c696d336a3104fbf58d1
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details  in ">
+    <div id="after-5" class="inner-level collapse collapsable-details ">
         <div class="hook">
-          <div class="brief failed">
+          <div class="brief passed">
             <span class="keyword indention">After</span>
               <span class="location name">com.amazon.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</span>
 
-  <span class="lead-duration duration">0.049</span>
+  <span class="lead-duration duration">0.721</span>
 
           </div>
 
 
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-6">
-          <a>Error message</a>
-      </div>
-      <div id="msg-6" class="collapse collapsable-details  in ">
-        <pre>org.openqa.selenium.NoSuchWindowException: no such window: window was already closed
-  (Session info: chrome=87.0.4280.141)
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'MAC-MacBook-Air', ip: 'fe80:0:0:0:1c:3c6d:9c94:4e3f%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.7', java.version: '14.0.1'
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.141, chrome: {chromedriverVersion: 86.0.4240.22 (398b0743353ff..., userDataDir: /var/folders/01/_d4rgngs0zg...}, goog:chromeOptions: {debuggerAddress: localhost:54833}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: d9fbbbb0c400c696d336a3104fb...}
-Session ID: d9fbbbb0c400c696d336a3104fbf58d1
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
-	at com.amazon.step_definitions.Hooks.tearDown(Hooks.java:23)
-</pre>
+
+
+
+  <div class="embeddings inner-level">
+  <div class="embedding indention">
+    <div data-toggle="collapse" data-target="#embedding-6" class="collapsable-control">
+      <a>screenshot</a>
+      <a href="embeddings/embedding_-769349946.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-6" class="collapse collapsable-details ">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-769349946.png">
       </div>
     </div>
   </div>
-
-
-
-
+  </div>
 
         </div>
     </div>
